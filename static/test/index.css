@@ -110,6 +110,7 @@ nav {
 
 .text {
 	padding-left: 80px;
+	padding-right: 40px;
 	line-height: 2rem;
 	align-items: center;
 }
@@ -155,4 +156,5 @@ nav {
 
 .head-img {
 	width: 100%;
+	padding-right: 80px;
 }
