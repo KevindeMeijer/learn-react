@@ -1,0 +1,160 @@
+:root {
+	--primary: #ff6961;
+	--secondary: #5bc0eb;
+	--tertiary: #ffd670;
+	--black: #000;
+	--white: #fff;
+	--transition: 0.333s ease;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	font-size: 16px;
+	font-family: sans-serif;
+	line-height: 1.5rem;
+}
+
+head {
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(to left, var(--white), #b57474);
+}
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 20px 80px;
+	font-size: 18px;
+	color: var(--secondary);
+	width: 100%;
+}
+
+.navbrand {
+	display: flex;
+	align-items: center;
+	font-weight: 600;
+	color: var(--secondary);
+}
+
+.navbrand img {
+	width: 50px;
+	margin-right: 5px;
+}
+
+.nav-items {
+	margin-left: auto;
+}
+
+.nav-items ul li {
+	display: inline-block;
+	margin: 0 20px;
+	font-weight: bold;
+}
+
+.nav-items ul li a {
+	text-decoration: none;
+	color: var(--secondary);
+	transition: var(--transition);
+}
+
+.nav-items ul li a:hover {
+	color: var(--primary);
+	backface-visibility: hidden;
+	font-weight: bold;
+	position: relative;
+}
+
+.nav-items ul li a:hover::after {
+	content: "";
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	border-radius: 50%;
+	background-color: var(--primary);
+	transition: 0.5s ease;
+}
+
+.btn {
+	border: 3px solid var(--primary);
+	padding: 10px 25px;
+	border-radius: 100px;
+	font-weight: 700;
+	background-color: var(--white);
+	cursor: pointer;
+	color: var(--primary);
+	transition: var(--transition);
+}
+
+.btn:hover {
+	background-color: var(--primary);
+	color: var(--white);
+}
+
+.head-page {
+	width: 100%;
+	display: grid;
+	height: 85vh;
+	grid-template-columns: 1fr 1.2fr;
+	align-items: center;
+}
+
+.text {
+	padding-left: 80px;
+	padding-right: 40px;
+	line-height: 2rem;
+	align-items: center;
+}
+
+.text h4 {
+	font-weight: 800;
+	color: var(--primary);
+	font-size: 25px;
+}
+
+.text h1 {
+	font-weight: bold;
+	color: var(--secondary);
+	font-size: 40px;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+	line-height: 3rem;
+}
+
+.text p {
+	font-weight: 500;
+	font-size: 20px;
+	color: #333;
+	margin: 5px 0;
+	text-align: justify;
+}
+
+.text button {
+	border: none;
+	background-color: var(--primary);
+	color: var(--white);
+	padding: 15px 30px;
+	font-size: 18px;
+	margin: 30px 0px;
+	cursor: pointer;
+	border-radius: 100px;
+	transition: var(--transition);
+}
+
+.text button:hover {
+	background-color: rgb(201, 49, 44);
+}
+
+.head-img {
+	width: 100%;
+	padding-right: 80px;
+}
