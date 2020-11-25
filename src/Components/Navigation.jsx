@@ -27,6 +27,9 @@ function Navigation() {
 					<a href="#">
 						<li className="btn">Setup</li>
 					</a>
+					<a href="#">
+						<li className="btn">Setup 2</li>
+					</a>
 				</ul>
 			</div>
 		</div>
